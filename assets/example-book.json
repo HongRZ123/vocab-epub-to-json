@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "my-vocabulary-book",
+  "title": "My Vocabulary Book",
+  "author": "Author Name",
+  "edition": "First Edition",
+  "description": "A short description of this book.",
+  "contents": [
+    {
+      "id": "unit-1",
+      "kind": "section",
+      "title": "Unit 1",
+      "children": [
+        {
+          "id": "group-1",
+          "kind": "group",
+          "title": "Group 1",
+          "intro": [{"text": "Replace this with the source book's introduction to this group."}],
+          "cards": [
+            {
+              "id": "entry-1",
+              "front": [{"text": "example"}],
+              "back": [{"html": "<p>A representative instance.</p><p><em>The book provides an example.</em></p>"}]
+            }
+          ]
+        },
+        {
+          "id": "quiz-1",
+          "kind": "quiz",
+          "title": "Quiz 1",
+          "groupIds": ["group-1"],
+          "exercises": [
+            {
+              "id": "question-1",
+              "type": "single",
+              "prompt": "Choose the word closest to example.",
+              "options": [{"id": "a", "label": "instance"}, {"id": "b", "label": "ending"}],
+              "answer": "a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
